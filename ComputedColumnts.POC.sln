@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputedColumns.POC.EntityFramework", "ComputedColumns.POC.EntityFramework\ComputedColumns.POC.EntityFramework.csproj", "{8A63BE03-483A-4469-A6CC-4CE3FD57DFC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputedColumns.POC.Web", "ComputedColumns.POC.Web\ComputedColumns.POC.Web.csproj", "{77AF1C89-A27C-49FC-B04D-E1F5C5111234}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A63BE03-483A-4469-A6CC-4CE3FD57DFC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A63BE03-483A-4469-A6CC-4CE3FD57DFC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A63BE03-483A-4469-A6CC-4CE3FD57DFC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A63BE03-483A-4469-A6CC-4CE3FD57DFC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77AF1C89-A27C-49FC-B04D-E1F5C5111234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77AF1C89-A27C-49FC-B04D-E1F5C5111234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77AF1C89-A27C-49FC-B04D-E1F5C5111234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77AF1C89-A27C-49FC-B04D-E1F5C5111234}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
