@@ -24,7 +24,7 @@ namespace ComputedColumns.POC.EntityFramework
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {           
-            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=ComputedColumnsDb;Trusted_Connection=True;ConnectRetryCount=0");
+            optionsBuilder.UseSqlServer("Server=localhost;Database=ComputedColumnsDb;Trusted_Connection=True;ConnectRetryCount=0");
         }
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -56,7 +56,7 @@ namespace ComputedColumns.POC.Web.Controllers
             stopWatch.Restart();
             
             results = await _dbContext.Animals
-                .Where(a => EF.Functions.Like(a.ComputedProperty.ToLower(), formattedSearchText))
+                .Where(a => EF.Functions.Contains(a.ComputedProperty, $"\"{searchText}*\""))
                 .ToListAsync();
                 
             stopWatch.Stop();

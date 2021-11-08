@@ -28,10 +28,13 @@ namespace ComputedColumns.POC.Web
         {
             app.UseMvc();
             
-            var columnsDbContext = services.GetService<ComputedColumnsDbContext>();
-            //columnsDbContext.Database.Migrate();
-            
-            ComputedColumnsDbContext.Seed(columnsDbContext);
+            using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope())
+            {
+                var context = serviceScope.ServiceProvider.GetService<ComputedColumnsDbContext>();
+                context.Database.Migrate();
+                
+                ComputedColumnsDbContext.Seed(context);
+            }
         }
     }
 }
